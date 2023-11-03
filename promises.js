@@ -89,8 +89,8 @@ function getAllRepositoriesP(user) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log('Getting all the repos')
-            // resolve({repositories: ['repo1', 'repo2', 'repo3']})
-            reject(new Error(`There are no repos with that ${user}`));
+            // resolve({repositories: ['repo1', 'repo2', 'repo3']}) 
+            reject(new Error(`There are no repos with that ${user}`)); //! now this will throw an error.
         }, 2000)
     })
 }
